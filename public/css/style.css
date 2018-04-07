@@ -1,0 +1,39 @@
+body{
+    background-color: #eee;
+}
+
+.mui-body{
+	width:100%;
+	background-color: #eee;
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.tape{
+	height:100px;
+    position: relative;
+    background: #ddd;
+}
+
+.tape:after{
+    font-size: 72px;
+    color:#777;
+	content:attr(data-text)"";
+    margin-left: 13px;
+}
+
+.dot{
+	position: absolute;
+	width: 10px;
+	background: black;
+	height: 10px;
+	top:calc(50% - 10px);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+#chat{
+	ime-mode:disabled;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn.muicss.com/mui-0.9.39-rc1/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+	<title>プレモルス ルーム名：<%= roomid %></title>
+</head>
+<body>
+	<table class="mui-body" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <center>
+                    <div class="mui-container">
+                        <h3 class="mui--text-center">The Premium Morse</h3>
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="mui-panel">
+                                    <table id="content-wrapper" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <h2>ルーム名：<%= roomid %></h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mui--divider-top">
+												<div class="tape">
+												</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td>
+												<div class="mui-textfield">
+													<input type="text" id="chat" placeholder="チャット">
+												</div>
+											</td>
+                                        </tr>
+                                        <tr>
+											<td>
+												手動信号
+												<button class="mui-btn mui-btn--fab mui-btn--primary" id="pulse">√</button>
+											</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <script src="//cdn.muicss.com/mui-0.9.39-rc1/js/mui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+    <script type="text/javascript" src="/script/Sounder.js"></script>
+    <script type="text/javascript" src="/script/ThePremiumMorse.js"></script>
+</body>
+</html>
